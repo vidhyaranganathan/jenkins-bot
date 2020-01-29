@@ -1,12 +1,12 @@
 # for more info visit https://cto.ai/docs/ops-reference
 version: '1'
 commands:
-    - name: jenkins-bot:0.1.0
-      public: false
+    - name: jenkins-bot:1.0.0
+      public: true
       description: Jenkins Bot
       run: node /ops/index.js
       sdk: '2'
-      sourceCodeURL: ''
+      sourceCodeURL: 'https://github.com/vidhya0406/jenkins-bot'
       mountCwd: false
       mountHome: false
       env:
