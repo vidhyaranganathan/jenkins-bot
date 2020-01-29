@@ -1,0 +1,41 @@
+{
+	"name": "jenkins-bot",
+	"version": "1.0.0",
+	"description": "Jenkins Ops Bot",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@cto.ai/sdk": "^2.0.1"
+	},
+	"release": {
+		"plugins": [
+			"@semantic-release/commit-analyzer",
+			"@semantic-release/release-notes-generator",
+			[
+				"@semantic-release/npm",
+				{
+					"npmPublish": false
+				}
+			],
+			"@semantic-release/changelog",
+			"@semantic-release/git"
+		],
+		"branch": "master"
+	},
+	"devDependencies": {
+		"@semantic-release/changelog": "^5.0.0",
+		"@semantic-release/commit-analyzer": "^8.0.0",
+		"@semantic-release/git": "^9.0.0",
+		"@semantic-release/npm": "^7.0.0",
+		"@semantic-release/release-notes-generator": "^9.0.0",
+		"form-data": "^3.0.0",
+		"jenkins": "^0.27.0",
+		"moment": "^2.24.0",
+		"semantic-release": "^17.0.1"
+	}
+}
