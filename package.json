@@ -35,7 +35,7 @@
 		"@semantic-release/release-notes-generator": "^9.0.0",
 		"form-data": "^3.0.0",
 		"jenkins": "^0.27.0",
-		"moment": "^2.24.0",
+		"moment": "^2.29.2",
 		"semantic-release": "^17.0.1"
 	}
 }
